@@ -1,0 +1,23 @@
+{
+    "name": "legalthings/php-code-quality",
+    "description": "Quality assurance toolchain",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Legal Things",
+            "email": "info@legalthings.net"
+        }
+    ],
+    "require": {
+        "codeception/codeception": "2.*",
+        "codeception/specify": "0.4.*",
+        "mikey179/vfsStream": "1.*",
+        "squizlabs/php_codesniffer": "2.*"
+    },
+    "config": {
+        "use-include-path": true,
+        "bin-dir": "bin"
+    }
+}
+
