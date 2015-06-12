@@ -26,5 +26,5 @@ All PHP projects of Legal Things should include this package. It can be installe
 [phpcs](https://github.com/squizlabs/PHP_CodeSniffer) tokenises PHP files and detects violations of a defined set of coding standards. It is an essential development tool that ensures your code remains clean and consistent.
 This package comes with a custom ruleset which embodies the Legal Things PHP coding standard.
 
-    bin/phpcs --standard=vendor/legalthings/php-code-quality --exclude=bin,vendor
+    bin/phpcs . --standard=vendor/legalthings/php-code-quality --ignore=/bin/,/vendor/,/tests/
 

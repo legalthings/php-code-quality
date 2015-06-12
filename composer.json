@@ -12,6 +12,7 @@
     "require": {
         "codeception/codeception": "2.*",
         "codeception/specify": "0.4.*",
+        "codeception/phpbuiltinserver": "*",        
         "mikey179/vfsStream": "1.*",
         "squizlabs/php_codesniffer": "2.*"
     },

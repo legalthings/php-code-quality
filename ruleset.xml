@@ -4,6 +4,13 @@
  
  <!-- Most of PSR2 -->
  <rule ref="PSR2">
+   <exclude name="PSR1.Classes.ClassDeclaration" />
    <exclude name="Generic.ControlStructures.InlineControlStructure" />
  </rule>
+ 
+ <!-- TODO: Add own version of PSR1.Classes.ClassDeclaration -->
+ <!-- TODO: Add own version of Generic.ControlStructures.InlineControlStructure -->
+ 
+ <!-- TODO: Add own rules -->
 </ruleset>
+
