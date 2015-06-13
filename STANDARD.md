@@ -26,10 +26,11 @@ LegalThings follows the [PSR-2 coding style guide](https://github.com/php-fig/fi
 
 Lines MAY be longer than 80 characters; Lines SHOULD NOT be longer than 120 characters; lines longer than that SHOULD be split into multiple subsequent lines of no more than 120 characters each.
 
-### 2.2. Exception on [Section 5 - Control Structures](http://www.php-fig.org/psr/psr-2/#5.-control-structures) and [Section 5.1 - `if`, `elseif`, `else`](http://www.php-fig.org/psr/psr-2/#5.1.-if,-elseif,-else)
+### 2.2. Exception on [Section 5 - Control Structures](http://www.php-fig.org/psr/psr-2/#5.-control-structures)
 
 The body of each structure MUST be enclosed by braces, with the exception of an `if` structure.
 
+#### 2.2.1. Exception on [Section 5.1 - `if`, `elseif`, `else`](http://www.php-fig.org/psr/psr-2/#5.1.-if,-elseif,-else)
 An `if` structure MUST be omit braces when the body is on the same line as the `if` statement. The `if` structure MUST include braces when the body is on the next line after the `if` statement.
 
     if ($expr) echo 'Expression is true';
@@ -43,15 +44,15 @@ An `if` structure SHOULD be on a single line, if the complete structure is equal
 
 The keywords `AND` and `OR` SHOULD NOT be used. Instead use `&&` and `||`.
 
-#### 3.2. File length
+### 3.2. File length
 
 PHP files SHOULD be 500 lines or less.
 
-#### 3.3. Function length
+### 3.3. Function length
 
 Functions and methods SHOULD be 30 lines or less.
 
-#### 3.4. Function length
+### 3.4. Function length
 
 The [alternative syntax for control structures](http://php.net/manual/en/control-structures.alternative-syntax.php) MUST NOT be used in files containing only PHP.
 
