@@ -2,7 +2,7 @@
 
 ## Coding standard
 
-Please read the [Legal Things PHP coding standard](https://github.com/legalthings/php-coding-standard/STANDARD.md).
+Please read the [Legal Things PHP coding standard](https://github.com/legalthings/php-code-quality/blob/master/STANDARD.md#readme).
 
 
 ## Installation
