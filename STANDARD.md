@@ -104,11 +104,31 @@ Properties and methods SHOULD be public or protected, not private.
 
 Classes SHOULD NOT have simple getter and setter functions as replacement for public properties.
 
-## 6. Control Flow
+## 6. Nesting
+
+### 6.1. Nested blocks
+
+Within the body of a function or method, there SHOULD be no more than 4 levels of nesting. With this many levels of nesting, introduce a new function rather than to use more nested blocks.
+
+```php
+function foo() {
+    foreach (/* ... */) {
+        if (/* ... */) {
+            while (/* ... */) {
+                if (/* ... */) {
+                    // No more nested blocks
+                }
+            }
+        }
+    }
+}
+```
+
+### 6.2. Control flow
 
 Assertions and alternative flows SHOULD come before the normal flow to reduce nesting.
 
-**Example of correct flow:**
+**Examples of good flow:**
 
 ```php
 function fizz($a) {
@@ -119,7 +139,18 @@ function fizz($a) {
 }
 ```
 
-**Examples of incorrect flow:**
+```php
+function buzz($b) {
+    while ($b as $i) {
+        if (!$i) continue;
+       
+        $i->foo();
+        $i->bar();
+    }
+}
+```
+
+**Examples of bad flow, with unnecessary nesting:**
 
 ```php
 function fizz($a) {
@@ -141,6 +172,18 @@ function fizz($a) {
     bar();
 }
 ```
+
+```php
+function buzz($b) {
+    while ($b as $i) {
+        if ($i) {
+            $i->foo();
+            $i->bar();
+        }
+    }
+}
+```
+
 
 ## 7. Documentation
 
