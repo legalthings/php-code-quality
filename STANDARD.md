@@ -52,7 +52,7 @@ PHP files SHOULD be 500 lines or less.
 
 Functions and methods SHOULD be 30 lines or less.
 
-### 3.4. Function length
+### 3.4. Alternative syntax for control structures
 
 The [alternative syntax for control structures](http://php.net/manual/en/control-structures.alternative-syntax.php) MUST NOT be used in files containing only PHP.
 
@@ -119,14 +119,23 @@ function fizz($a) {
 }
 ```
 
-**Example of incorrect flow:**
+**Examples of incorrect flow:**
+
+```php
+function fizz($a) {
+    if ($a) {
+        foo();
+        bar();
+    }
+}
+```
 
 ```php
 function fizz($a) {
     if ($a) {
         foo();
     } else {
-       return;
+        return;
     }
     
     bar();
