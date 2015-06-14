@@ -61,7 +61,7 @@ The [alternative syntax for control structures](http://php.net/manual/en/control
 
 Directories MAY be omited if they're not used.
 
-Cache, user generated content, composer packages and bower packages SHOULD be excluded from distruction.
+Cache, user generated content and external (composer and bower) libraries SHOULD be excluded from distribution.
 
 ### 4.1. Projects
 
