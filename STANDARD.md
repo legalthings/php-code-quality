@@ -85,7 +85,7 @@ A project SHOULD follow the following directory structure:
   - img - Images _(except user generated content)_
   - js - JavaScript
 
-On staging and production environments, user generated content MUST be stored on secure, persistant, redundant and backed-up storage.
+On staging and production environments, user generated content MUST be stored on secure, persistent, redundant and backed-up storage (e.g. [AWS S3](https://aws.amazon.com/s3/) or [Elastic file system](http://aws.amazon.com/efs/)).
 
 ### 4.1 Libraries
 
