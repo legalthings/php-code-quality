@@ -1,4 +1,4 @@
-# LegalThings Resource Identifier (RI) Scheme
+# LegalThings Resource Identifier (LTRI) Scheme
 
 ### Scheme syntax
 
