@@ -28,3 +28,8 @@ This package comes with a custom ruleset which embodies the Legal Things PHP cod
 
     bin/phpcs . --standard=vendor/legalthings/php-code-quality --ignore=/bin/,/vendor/,/tests/
 
+## Versions
+
+Always use [sementic versioning](http://semver.org/). With projects, the continues integration will automatically update patch version. When introducing a new feature or deprecating something you should update the minor version in `composer.json`.
+
+**Do not introduce large changes or new features, while breaking backwards compatibility.** For a new major version, only cleanup tasks, specifically removing deprecated code, should be done. Manually update the major version in `composer.json`.
